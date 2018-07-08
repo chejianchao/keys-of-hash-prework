@@ -4,3 +4,5 @@ class Hash
     puts self
   end
 end
+a={:a => 1}
+a.keys_of("")
