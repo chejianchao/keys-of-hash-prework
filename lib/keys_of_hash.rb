@@ -13,4 +13,3 @@ class Hash
     res
   end
 end
-a={:a => 1}
