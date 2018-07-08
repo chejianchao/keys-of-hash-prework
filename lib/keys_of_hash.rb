@@ -1,11 +1,14 @@
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguments)
     # code goes here
     res = []
     self.each {|k,v|
-      if v == arguments
-        res << k
-      end
+      arguments.each {|arg|
+        if v == arg
+          res << k
+        end
+      }
+      
     }
     res
   end
